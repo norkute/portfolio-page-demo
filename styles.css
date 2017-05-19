@@ -1,26 +1,73 @@
+/* Header */
+
 body {
     font-family: Helvetica, Arial, sans-serif;
+}
+
+.navigation {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .navigation ul {
     list-style: none;
     padding-left: 0;
+    float: right;
 }
 
 .navigation li {
     display: inline-block;
 }
 
+.navigation a {
+    font-size: 12px;
+}
+
 .navigation a, .call-to-action h1 {
     text-transform: uppercase;
     text-decoration: none;
+    color: white;
+    padding: 0 15px;
 }
 
 .call-to-action {
     text-align: center;
+    padding: 100px 0 70px 0;
 }
 
 header {
-    background-image: url("img/header-bg.jpg")
+    background-image: url("img/header-bg.jpg");
+    background-size: cover;
+    color: white;
+}
 
+.call-to-action h1 {
+    font-size: 60px;
+    letter-spacing: -1px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* Additional */
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.section-title {
+    background-color: #ec313c;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+
+}
+
+h2 {
+    text-align: center;
 }
